@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <h3 class="text-center text-primary">Hava haqqında məlumatını görmək istədiyiniz şəhəri seçin :</h3>
+                <select class="form-control" id="select-weather">
+                    <option value="">Şəhər seçin</option>
+                    <option value="Baku">Bakı</option>
+                    <option value="Istanbul">İstanbul</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Lagos">Laqos</option>
+                    <option value="Jakarta">Cakarta</option>
+                    <option value="Sydney">Sidney</option>
+                    <option value="Bergen">Berqen</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="form-group" id="weather-information">
+                <table class="table table-striped weather-table">
+                    <thead>
+                        <tr>
+                            <th>Şəhər</th>
+                            <th>Ölkə</th>
+                            <th>Temperatur Selsi</th>
+                            <th>Temperatur Farad</th>
+                            <th>Hal-Hazırki vaxt</th>
+                            <th>Küləyin sürəti</th>
+                            <th>Rütubət</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="city"></td>
+                            <td id="country"></td>
+                            <td id="celsius"></td>
+                            <td id="farade"></td>
+                            <td id="timeNow"></td>
+                            <td id="windSpeed"></td>
+                            <td id="humidity"></td>
+                        </tr>  
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+   
+   
+</form>
+
+
